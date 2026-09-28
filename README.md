@@ -4,10 +4,10 @@ A responsive, single-page travel website template with an editorial look. The de
 
 ## Features
 
-- Three-destination hero slideshow that advances every 6.5 seconds
+- Six-destination hero slideshow that advances every 6.5 seconds
 - Manual slide controls, pause/play, and reduced-motion support
 - Destination cards that prefill the trip-brief form
-- A destination index featuring Azerbaijan, Georgia, Dubai, Egypt, Malaysia, Russia, and Bangkok & Pattaya
+- A destination index featuring Egypt, Malaysia, Russia, and Bangkok & Pattaya
 - Floating WhatsApp shortcut with a deliberately invalid demo number
 - Copyable travel brief; nothing is submitted or stored
 - Mobile navigation, keyboard focus states, and locally hosted fonts
@@ -26,7 +26,7 @@ Then open `http://localhost:4173`.
 ## Make it yours
 
 1. Replace the demo name and compass mark in `index.html` and the favicon in `assets/favicon.svg`.
-2. Change the three destination photos and their alt text in `index.html`.
+2. Change the six destination photos and their alt text in `index.html`.
 3. Keep the slideshow text in the `slides` array in `script.js` in the same order as the hero images.
 4. Edit colors and typography in the variables at the top of `styles.css`.
 5. Replace `000000000000` in the WhatsApp link in `index.html` with your business number before launch.

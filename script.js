@@ -15,7 +15,10 @@ mobileNav.querySelectorAll("a").forEach(link => link.addEventListener("click", (
 const slides = [
   { location: "Cappadocia, Türkiye  •  38°38′ N", first: "Go a little", emphasis: "further.", description: "Let the extraordinary find you somewhere between the sunrise and the road ahead.", name: "Cappadocia" },
   { location: "The Swiss Alps  •  46°41′ N", first: "Find your", emphasis: "quiet.", description: "Slow down where the mountains meet the water and every view asks you to stay.", name: "The Swiss Alps" },
-  { location: "The Andaman Coast, Thailand  •  08°03′ N", first: "Follow the", emphasis: "water.", description: "Trade the usual route for open horizons, warm seas, and the freedom to drift.", name: "Thailand" }
+  { location: "The Andaman Coast, Thailand  •  08°03′ N", first: "Follow the", emphasis: "water.", description: "Trade the usual route for open horizons, warm seas, and the freedom to drift.", name: "Thailand" },
+  { location: "Baku, Azerbaijan  •  40°23′ N", first: "Find the", emphasis: "unexpected.", description: "Wander from the old city's warm stone streets toward a skyline full of possibility.", name: "Azerbaijan" },
+  { location: "Kazbegi, Georgia  •  42°39′ N", first: "Take the", emphasis: "high road.", description: "Follow mountain light, winding roads, and the quiet pull of the Caucasus.", name: "Georgia" },
+  { location: "Dubai, United Arab Emirates  •  25°12′ N", first: "Chase the", emphasis: "horizon.", description: "See the city fade into golden dunes and stay for the last light.", name: "Dubai" }
 ];
 const hero = document.querySelector(".hero");
 const heroImages = [...document.querySelectorAll(".hero-slide")];
