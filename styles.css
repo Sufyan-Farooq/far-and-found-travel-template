@@ -18,3 +18,5 @@
 .brand small,.hero-rail{font-size:11px}
 .feature-copy>p:first-child,.feature-copy a:hover{color:#fff}
 .progress-segment span{transition:background .25s}
+.site-header{background:linear-gradient(180deg,rgba(4,20,25,.62),transparent)}
+.header-cta{background:var(--deep)}
