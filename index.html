@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102f36">
+  <meta name="description" content="Far & Found is an editorial travel website template for remarkable places and considered journeys.">
+  <title>Far & Found — Go a little further</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/karla.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/el-messiri.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/cappadocia.webp" as="image">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Far and Found, home">
+      <svg class="brand-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="24" r="21.5" stroke="currentColor"/><path d="m15 33 9-23 9 23-9-5-9 5Z" stroke="currentColor" stroke-linejoin="round"/><path d="M24 28V10" stroke="currentColor"/></svg>
+      <span>far <span class="brand-amp">&amp;</span> found<small>TRAVEL JOURNAL</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation"><a href="#destinations">Destinations</a><a href="#journeys">Ways to travel</a><a href="#story">The story</a></nav>
+    <a class="header-cta" href="#plan">Plan your escape <span aria-hidden="true">↗</span></a>
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button>
+  </header>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden><a href="#destinations">Destinations</a><a href="#journeys">Ways to travel</a><a href="#story">The story</a><a href="#plan">Plan your escape</a></nav>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-media" aria-hidden="true">
+        <img class="hero-slide is-active" src="assets/cappadocia.webp" alt="" width="1536" height="1024" fetchpriority="high">
+        <img class="hero-slide" src="assets/swiss-alps.webp" alt="" width="1536" height="1024">
+        <img class="hero-slide" src="assets/thailand-bay.webp" alt="" width="1536" height="1024">
+      </div>
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="hero-location" id="hero-location">Cappadocia, Türkiye <span>•</span> 38°38′ N</p>
+        <h1 id="hero-title">Go a little <em>further.</em></h1>
+        <p class="hero-description" id="hero-description">Let the extraordinary find you somewhere between the sunrise and the road ahead.</p>
+        <a class="hero-button" href="#destinations">Explore destinations <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="hero-rail"><span>THE WORLD IS WAITING</span><span class="hero-rail-line"></span><span>SCROLL TO EXPLORE</span></div>
+      <div class="hero-controls" aria-label="Featured destinations">
+        <div class="hero-current"><span id="hero-index">01</span><span class="hero-count-divider"></span><span>03</span></div>
+        <div class="hero-progress" role="group" aria-label="Choose a destination">
+          <button class="progress-segment is-active" type="button" data-slide="0" aria-label="Show Cappadocia" aria-current="true"><span></span></button>
+          <button class="progress-segment" type="button" data-slide="1" aria-label="Show the Swiss Alps"><span></span></button>
+          <button class="progress-segment" type="button" data-slide="2" aria-label="Show Thailand"><span></span></button>
+        </div>
+        <div class="hero-controls-actions"><button class="hero-arrow" id="hero-prev" type="button" aria-label="Previous destination">←</button><button class="hero-arrow" id="hero-next" type="button" aria-label="Next destination">→</button><button class="hero-pause" id="hero-pause" type="button" aria-label="Pause slideshow">Ⅱ</button></div>
+      </div>
+      <p class="sr-only" id="hero-announcement" aria-live="polite"></p>
+    </section>
+
+    <section class="intro section-pad" id="story"><p class="intro-aside">A NOTE FROM THE ROAD</p><div><h2>Some places stay with you <em>long after you leave.</em></h2><p>The early light. A wrong turn that becomes the best story. The feeling of arriving somewhere entirely new. This is a place to find journeys worth taking your time over.</p></div><span class="intro-asterisk" aria-hidden="true">✳</span></section>
+
+    <section class="destinations section-pad" id="destinations" aria-labelledby="destinations-title">
+      <div class="section-head"><div><p class="section-side">GO SOMEWHERE</p><h2 id="destinations-title">Three places.<br><em>Endless possibility.</em></h2></div><p>Follow the landscape that calls to you. Each destination is a starting point for a journey of your own.</p></div>
+      <div class="destination-grid">
+        <a class="destination-card" href="#plan" data-destination="Cappadocia, Türkiye"><img src="assets/cappadocia.webp" alt="Balloons above Cappadocia's rock valleys at sunrise" loading="lazy" width="1536" height="1024"><span class="destination-shade"></span><span class="destination-top">TÜRKİYE <span class="destination-arrow" aria-hidden="true">↗</span></span><span class="destination-bottom"><strong>Cappadocia</strong><span>Sunrise skies &amp; storied valleys</span></span></a>
+        <a class="destination-card" href="#plan" data-destination="Swiss Alps"><img src="assets/swiss-alps.webp" alt="Alpine lake and mountain cabin in Switzerland" loading="lazy" width="1536" height="1024"><span class="destination-shade"></span><span class="destination-top">SWITZERLAND <span class="destination-arrow" aria-hidden="true">↗</span></span><span class="destination-bottom"><strong>The Swiss Alps</strong><span>Still lakes &amp; mountain air</span></span></a>
+        <a class="destination-card" href="#plan" data-destination="Thailand"><img src="assets/thailand-bay.webp" alt="Turquoise bay and limestone islands in Thailand" loading="lazy" width="1536" height="1024"><span class="destination-shade"></span><span class="destination-top">THAILAND <span class="destination-arrow" aria-hidden="true">↗</span></span><span class="destination-bottom"><strong>The Andaman Coast</strong><span>Island mornings &amp; open water</span></span></a>
+      </div>
+      <p class="destination-footnote">No fixed routes. Just a few good places to begin.</p>
+    </section>
+
+    <section class="journeys section-pad" id="journeys" aria-labelledby="journeys-title"><div class="journeys-intro"><p class="section-side">FIND YOUR PACE</p><h2 id="journeys-title">Travel that feels <em>like you.</em></h2><p>There is more than one way to see the world. Start with the feeling you want to take home.</p></div><div class="journey-list"><div><span class="journey-symbol" aria-hidden="true">✳</span><h3>Slow &amp; scenic</h3><p>Long views, unhurried mornings, and room for a detour.</p><span class="journey-tags">NATURE / RAIL / RETREATS</span></div><div><span class="journey-symbol" aria-hidden="true">◌</span><h3>Culture &amp; colour</h3><p>Neighbourhood walks, local tables, and stories around every corner.</p><span class="journey-tags">CITIES / FOOD / ART</span></div><div><span class="journey-symbol" aria-hidden="true">↗</span><h3>Wild &amp; wide open</h3><p>Leave the familiar behind and follow the horizon.</p><span class="journey-tags">COASTS / TRAILS / ADVENTURE</span></div></div></section>
+
+    <section class="feature" aria-labelledby="feature-title"><div class="feature-image"><img src="assets/thailand-bay.webp" alt="A quiet longtail boat crossing an Andaman Sea bay" loading="lazy" width="1536" height="1024"></div><div class="feature-copy"><p>THE MOMENTS BETWEEN</p><h2 id="feature-title">A different view changes <em>everything.</em></h2><span class="feature-rule"></span><p>The best part of a journey rarely fits on an itinerary. Leave a little space for the unexpected.</p><a href="#plan">Make room for more <span aria-hidden="true">↗</span></a></div></section>
+
+    <section class="path section-pad" aria-labelledby="path-title"><div class="path-head"><p class="section-side">FROM IDEA TO AWAY</p><h2 id="path-title">The journey starts <em>with a thought.</em></h2></div><div class="path-steps"><div><span>01</span><h3>Find your feeling</h3><p>Choose a landscape, a pace, or just a direction.</p></div><div><span>02</span><h3>Make it yours</h3><p>Turn your ideas into a simple trip brief you can share.</p></div><div><span>03</span><h3>Go further</h3><p>Keep the moments that matter. Leave space for the rest.</p></div></div></section>
+
+    <section class="plan section-pad" id="plan" aria-labelledby="plan-title"><div class="plan-intro"><p class="section-side">YOUR NEXT CHAPTER</p><h2 id="plan-title">Where to <em>next?</em></h2><p>Make a quick travel brief. Copy it and share it with the travel planner of your choice.</p></div><form class="plan-form" id="trip-form"><div class="form-grid"><label>Destination<select name="destination" required><option value="" selected disabled>Choose a place</option><option>Cappadocia, Türkiye</option><option>Swiss Alps</option><option>Thailand</option><option>Somewhere else</option></select></label><label>Travel style<select name="style" required><option value="" selected disabled>What feels right?</option><option>Slow &amp; scenic</option><option>Culture &amp; colour</option><option>Wild &amp; wide open</option><option>A little of everything</option></select></label><label>When<input name="dates" placeholder="A season or date range"></label><label>Travellers<input name="travellers" type="number" min="1" max="30" value="2"></label></div><label>What matters most?<textarea name="notes" rows="3" placeholder="Tell us about the moments you want to make room for"></textarea></label><button class="submit-button" type="submit">Create my trip brief <span aria-hidden="true">↗</span></button><div class="brief-result" id="brief-result" hidden><h3>Your trip brief</h3><pre id="brief-text"></pre><button class="copy-button" id="copy-brief" type="button">Copy brief</button><p class="copy-status" id="copy-status" aria-live="polite"></p></div></form></section>
+  </main>
+  <footer class="footer"><div class="footer-main"><a class="brand footer-brand" href="#top" aria-label="Far and Found, back to top"><svg class="brand-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="24" r="21.5" stroke="currentColor"/><path d="m15 33 9-23 9 23-9-5-9 5Z" stroke="currentColor" stroke-linejoin="round"/><path d="M24 28V10" stroke="currentColor"/></svg><span>far <span class="brand-amp">&amp;</span> found<small>TRAVEL JOURNAL</small></span></a><p>The world is wide.<br>Stay curious.</p><div class="footer-nav"><a href="#destinations">Destinations</a><a href="#journeys">Ways to travel</a><a href="#story">The story</a><a href="#plan">Plan a trip</a></div></div><div class="footer-bottom"><span>Far &amp; Found · A travel template</span><a href="#top">Back to top ↑</a></div></footer>
+  <script src="script.js" defer></script>
+</body>
+</html>
