@@ -83,7 +83,7 @@ startTimer();
 
 const tripForm = document.querySelector("#trip-form");
 const destinationSelect = tripForm.elements.destination;
-document.querySelectorAll(".destination-card").forEach(card => card.addEventListener("click", () => {
+document.querySelectorAll("[data-destination]").forEach(card => card.addEventListener("click", () => {
   destinationSelect.value = card.dataset.destination;
 }));
 let latestBrief = "";
@@ -118,3 +118,12 @@ document.querySelector("#copy-brief").addEventListener("click", async () => {
     status.textContent = "Copy is unavailable here. Select the brief above to copy it.";
   }
 });
+const chatSections = new Set();
+const chatObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) chatSections.add(entry.target);
+    else chatSections.delete(entry.target);
+  });
+  document.body.classList.toggle("chat-hidden", chatSections.size > 0);
+});
+document.querySelectorAll(".plan,.footer").forEach(section => chatObserver.observe(section));
